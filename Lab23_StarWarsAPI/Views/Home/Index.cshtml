@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <h2>Look up character</h2>
+<form action="/Home/GetPersonbyId" method="post">
+    <input type="number" name="characterId" placeholder="Character Id number" />
+    <input type="submit"  value="Look up character" />
+</form>
+<h2>Look up planet</h2>
+<form action="/Home/GetPlanetbyId" method="post">
+    <input type="number" name="planetId" placeholder="Planet Id number" />
+    <input type="submit" value="Look up Planet" />
+</form>

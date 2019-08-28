@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "GetPlanetbyId";
+}
+@model Lab23_StarWarsAPI.Models.Planets
+
+<h1>Planet</h1>
+
+<ul>
+    <li>Name: @Model.name</li>
+    <li>Rotation: @Model.rotation_period</li>
+    <li>Orbit: @Model.orbital_period</li>
+    <li>Diameter: @Model.diameter</li>
+    <li>Climate: @Model.climate</li>
+    <li>Gravity: @Model.gravity</li>
+    <li>Terrain:  @Model.terrain</li>
+    <li>Surface Water:  @Model.surface_water</li>
+    <li>Population:  @Model.population</li>
+
+</ul>
+@Html.ActionLink("Go back to home", "Index")
+

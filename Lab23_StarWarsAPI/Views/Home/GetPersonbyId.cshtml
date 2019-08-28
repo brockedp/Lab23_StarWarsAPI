@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "GetPersonbyId";
+}
+@model Lab23_StarWarsAPI.Models.Characters
+<h1>Character</h1>
+<ul>
+    <li>Name: @Model.name</li>
+    <li>Height: @Model.height</li>
+    <li>Mass: @Model.mass</li>
+    <li>Hair Color: @Model.hair_color</li>
+    <li>Eye Color: @Model.eye_color</li>
+    <li>Birth Year: @Model.birth_year</li>
+    <li>Gender:  @Model.gender</li>
+    
+</ul>
+@Html.ActionLink("Go back to home", "Index")
